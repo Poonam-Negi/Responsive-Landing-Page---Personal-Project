@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Landing Page - Personal Project</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  darkMode: 'class'
+}
+</script>
+
+</head>
+
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+
+<!-- NAVBAR -->
+<nav class="shadow-md bg-white dark:bg-gray-800">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-2xl font-bold text-blue-600">FirstSite</h1>
+
+<ul class="hidden md:flex gap-6">
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="flex items-center gap-4">
+
+<!-- Dark Mode Toggle -->
+<button id="theme-toggle" class="text-xl">🌙</button>
+
+<!-- Mobile Menu Button -->
+<button id="menu-btn" class="md:hidden text-2xl">
+☰
+</button>
+
+</div>
+</div>
+
+<div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+<a href="#home" class="block py-2">Home</a>
+<a href="#features" class="block py-2">Features</a>
+<a href="#pricing" class="block py-2">Pricing</a>
+<a href="#contact" class="block py-2">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="py-20 text-center bg-gray-100 dark:bg-gray-800">
+<h2 class="text-4xl md:text-5xl font-bold mb-6">
+Build Modern Websites Faster
+</h2>
+
+<p class="mb-8 text-gray-600 dark:text-gray-300">
+A responsive landing page built with Tailwind CSS.
+</p>
+
+<button class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+Get Started
+</button>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="py-16">
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+Features
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="p-6 shadow-lg rounded-lg text-center bg-white dark:bg-gray-800">
+<h3 class="text-xl font-semibold mb-3">Responsive</h3>
+<p class="text-gray-600 dark:text-gray-300">
+Works across mobile, tablet and desktop.
+</p>
+</div>
+
+<div class="p-6 shadow-lg rounded-lg text-center bg-white dark:bg-gray-800">
+<h3 class="text-xl font-semibold mb-3">Fast</h3>
+<p class="text-gray-600 dark:text-gray-300">
+Built with Tailwind CSS for fast development.
+</p>
+</div>
+
+<div class="p-6 shadow-lg rounded-lg text-center bg-white dark:bg-gray-800">
+<h3 class="text-xl font-semibold mb-3">Customizable</h3>
+<p class="text-gray-600 dark:text-gray-300">
+Easily customize UI components.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-16 bg-gray-100 dark:bg-gray-800">
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-12">
+Pricing
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8 text-center">
+
+<div class="p-6 bg-white dark:bg-gray-900 shadow-lg rounded-lg">
+<h3 class="text-xl font-bold mb-4">Basic</h3>
+<p class="text-3xl font-bold mb-4">$9/mo</p>
+<p class="mb-4">Good for beginners</p>
+<button class="bg-blue-600 text-white px-5 py-2 rounded">
+Choose Plan
+</button>
+</div>
+
+<div class="p-6 bg-white dark:bg-gray-900 shadow-lg rounded-lg">
+<h3 class="text-xl font-bold mb-4">Pro</h3>
+<p class="text-3xl font-bold mb-4">$29/mo</p>
+<p class="mb-4">Best for professionals</p>
+<button class="bg-blue-600 text-white px-5 py-2 rounded">
+Choose Plan
+</button>
+</div>
+
+<div class="p-6 bg-white dark:bg-gray-900 shadow-lg rounded-lg">
+<h3 class="text-xl font-bold mb-4">Enterprise</h3>
+<p class="text-3xl font-bold mb-4">$99/mo</p>
+<p class="mb-4">For large businesses</p>
+<button class="bg-blue-600 text-white px-5 py-2 rounded">
+Choose Plan
+</button>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-16">
+<div class="max-w-7xl mx-auto px-6 text-center">
+
+<h2 class="text-3xl font-bold mb-12">
+What Clients Say
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="p-6 shadow-lg rounded-lg bg-white dark:bg-gray-800">
+<p>"Amazing design and easy to customize."</p>
+<h4 class="mt-4 font-semibold">John Doe</h4>
+</div>
+
+<div class="p-6 shadow-lg rounded-lg bg-white dark:bg-gray-800">
+<p>"Perfect for building modern websites."</p>
+<h4 class="mt-4 font-semibold">Sarah Smith</h4>
+</div>
+
+<div class="p-6 shadow-lg rounded-lg bg-white dark:bg-gray-800">
+<p>"Clean UI and responsive layout."</p>
+<h4 class="mt-4 font-semibold">David Lee</h4>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 bg-gray-100 dark:bg-gray-800">
+<div class="max-w-xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-8">
+Contact Us
+</h2>
+
+<form class="space-y-4">
+
+<input type="text" placeholder="Name"
+class="w-full p-3 border rounded dark:bg-gray-900">
+
+<input type="email" placeholder="Email"
+class="w-full p-3 border rounded dark:bg-gray-900">
+
+<textarea placeholder="Message"
+class="w-full p-3 border rounded dark:bg-gray-900"></textarea>
+
+<button class="w-full bg-blue-600 text-white py-3 rounded">
+Send Message
+</button>
+
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-white py-6 text-center">
+<p>© 2026 FirstSite. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
